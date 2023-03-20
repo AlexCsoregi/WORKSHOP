@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+}
+
+nav ul { 
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+nav ul li {
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 1px 1px  black ;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style: none;
+    height: 40px;
+    width: 80px;
+    background: none;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    font-size: large;
+    text-shadow: 2px 2px  black ;
+}
+
+
+.tarolo {
+
+    width: 500px;
+    font-size: 20px;
+    height: 200px;
+    background-color: green;
+    position: relative;
+    margin: 20px;
+   /* transform: translate(50px, 400px) rotate(45deg) skew(25deg)scale(0.5, 0.75); */
+    transition: width 1s, background-color 1s;
+    transition-delay: 0.3s;
+    animation-name: zold-doboz;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    
+}  
+
+@keyframes zold-doboz {
+   0% { background-color: green;}
+   50% {background-color: blue;
+        width: 100px;}
+
+    75% { background-color: red;}
+    100% { background-color: green;}
+}
+
+
+
+
+ /* .tarolo:hover {
+   width: 100px;
+    background-color: yellowgreen; 
+
+} */
+
+
+
